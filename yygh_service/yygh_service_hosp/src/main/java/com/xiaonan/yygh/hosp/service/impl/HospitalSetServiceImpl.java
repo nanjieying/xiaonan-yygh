@@ -21,7 +21,7 @@ import java.util.Map;
  */
 @Service
 public class HospitalSetServiceImpl extends ServiceImpl<HospitalSetMapper, HospitalSet> implements HospitalSetService {
-    @Autowired
-    private HospitalSetMapper hospitalSetMapper;
+
+
 
 }

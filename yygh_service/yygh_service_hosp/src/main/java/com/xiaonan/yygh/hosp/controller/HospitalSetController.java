@@ -23,23 +23,10 @@ public class HospitalSetController {
     private HospitalSetService hospitalSetService;
 
     //1 查询医院设置表所有信息
-    @ApiOperation(value = "获取所有医院设置")
     @GetMapping("findAll")
-    public Result findAllHospitalSet() {
+    public List<HospitalSet> findAllHospitalSet() {
         //调用service的方法
         List<HospitalSet> list = hospitalSetService.list();
-        return Result.ok(list);
-    }
-
-    //2 逻辑删除医院设置
-    @ApiOperation(value = "逻辑删除医院设置")
-    @DeleteMapping("{id}")
-    public Result removeHospSet(@PathVariable Long id) {
-        boolean flag = hospitalSetService.removeById(id);
-        if(flag) {
-            return Result.ok();
-        } else {
-            return Result.fail();
-        }
+        return list;
     }
 }

@@ -2,6 +2,7 @@ package com.xiaonan.yygh.hosp.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.xiaonan.yygh.common.exception.YyghException;
 import com.xiaonan.yygh.common.result.Result;
 import com.xiaonan.yygh.common.utils.MD5;
 import com.xiaonan.yygh.hosp.service.HospitalSetService;

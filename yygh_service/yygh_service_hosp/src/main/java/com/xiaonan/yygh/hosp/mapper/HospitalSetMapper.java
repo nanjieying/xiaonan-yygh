@@ -13,6 +13,5 @@ import org.apache.ibatis.annotations.Mapper;
  * @date 2023/7/21 17:07
  * @say 山河总静好，人事也从容
  */
-@Mapper
 public interface HospitalSetMapper extends BaseMapper<HospitalSet> {
 }

@@ -2,6 +2,7 @@ package com.xiaonan.yygh.hosp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * ServiceHospApplication
@@ -13,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @say 山河总静好，人事也从容
  */
 @SpringBootApplication
+@ComponentScan(basePackages = "com.xiaonan")
 public class ServiceHospApplication {
     public static void main(String[] args) {
         SpringApplication.run(ServiceHospApplication.class, args);

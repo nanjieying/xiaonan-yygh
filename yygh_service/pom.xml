@@ -14,6 +14,7 @@
     <modules>
         <module>yygh_service_user</module>
         <module>yygh_service_hosp</module>
+        <module>yygh_service_cnm</module>
     </modules>
 
     <dependencies>

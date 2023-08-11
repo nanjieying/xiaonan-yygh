@@ -4,7 +4,9 @@ package com.xiaonan.yygh.cmn.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.xiaonan.yygh.model.cmn.Dict;
 import com.xiaonan.yygh.model.hosp.HospitalSet;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -20,4 +22,12 @@ public interface DictService extends IService<Dict>{
 
     //根据数据id查询子数据列表
     List<Dict> findChlidData(Long id);
+
+    /**
+     * 导出
+     * @param response
+     */
+    void exportDictData(HttpServletResponse response);
+
+    void importDictData(MultipartFile file);
 }
